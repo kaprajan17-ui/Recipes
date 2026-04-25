@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light">
+<meta name="supported-color-schemes" content="light">
 <title>3-2-1 Ribs — Full Cook Guide</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500&family=IBM+Plex+Mono:wght@400&display=swap');
@@ -28,8 +30,18 @@
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { background: var(--bg); color: var(--text); font-family: 'IBM Plex Sans', sans-serif; font-size: 15px; line-height: 1.75; }
-html { color-scheme: light only; }
+html {
+  color-scheme: light only;
+  background: #faf9f6 !important;
+}
+body {
+  background: #faf9f6 !important;
+  color: #1a1a1a !important;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 15px;
+  line-height: 1.75;
+  -webkit-text-fill-color: #1a1a1a;
+}
 
 .shell { display: flex; min-height: 100vh; }
 
@@ -187,6 +199,30 @@ td.nc { color: var(--muted); font-size: 12px; font-style: italic; }
   .split-cards { grid-template-columns: 1fr; }
 }
 </style>
+<style>
+  @media (prefers-color-scheme: dark) {
+    html, body { background: #faf9f6 !important; color: #1a1a1a !important; }
+    .nav { background: #ffffff !important; }
+    .content { background: #faf9f6 !important; }
+    .card, .side-block, .tstep, .callout { background: #ffffff !important; color: #1a1a1a !important; }
+    .tstep.hl { background: #fdf0e8 !important; }
+    .callout.gold { background: #fdf0e8 !important; }
+    .callout.red { background: #fdf0f0 !important; }
+    .callout.green { background: #f0f7f3 !important; }
+    .callout.blue { background: #eef4fb !important; }
+    .nav-logo-title, .section-title, h2, h3, .taction, .card-title { color: #1a1a1a !important; }
+    .nav-link { color: #666 !important; }
+    .nav-link.active { color: #c0521a !important; background: #fdf0e8 !important; }
+    .section-lead, .tnote, .card p, .check-desc { color: #666 !important; }
+    table { background: #ffffff !important; }
+    th { background: #f4f2ee !important; color: #666 !important; }
+    td { color: #1a1a1a !important; border-color: rgba(0,0,0,0.08) !important; }
+    .mobile-nav { background: #ffffff !important; }
+    .mobile-nav-btn { background: #f4f2ee !important; color: #444 !important; }
+    .mobile-nav-btn.active { background: #c0521a !important; color: #fff !important; }
+    .side-block-header { background: #f4f2ee !important; }
+  }
+</style>
 </head>
 <body>
 <div class="shell">
@@ -196,18 +232,18 @@ td.nc { color: var(--muted); font-size: 12px; font-style: italic; }
     <div class="nav-logo-eyebrow">Cook Guide · Baby Back Ribs</div>
     <div class="nav-logo-title">Smoke &amp; Rain</div>
     <div class="nav-logo-tagline">A Rainy Day Backyard Spread</div>
-    <div class="nav-logo-sub">12:45 PM start · 5:00 PM table</div>
+    <div class="nav-logo-sub">1:30 PM start · 5:20 PM table</div>
   </div>
 
   <div class="nav-section-label">The Cook</div>
   <button class="nav-link active" data-sec="timeline">Full Timeline</button>
   <button class="nav-link" data-sec="rubs">The Rubs<span class="nav-time">Mix before anything else</span></button>
   <button class="nav-link" data-sec="prep">Prep<span class="nav-time">12:45 PM</span></button>
-  <button class="nav-link" data-sec="smoke">Smoke Phase<span class="nav-time">1:30 – 3:30 PM</span></button>
-  <button class="nav-link" data-sec="wrap">Wrap Ribs<span class="nav-time">3:30 PM</span></button>
+  <button class="nav-link" data-sec="smoke">Smoke Phase<span class="nav-time">1:30 – 3:55 PM</span></button>
+  <button class="nav-link" data-sec="wrap">Wrap Ribs<span class="nav-time">3:55 PM</span></button>
   <button class="nav-link" data-sec="chicken">Chicken + Corn On<span class="nav-time">3:45 – 4:00 PM</span></button>
-  <button class="nav-link" data-sec="finish">Unwrap, Glaze + Finish<span class="nav-time">4:30 PM</span></button>
-  <button class="nav-link" data-sec="serve">Serve + Doneness Checks<span class="nav-time">5:00 PM</span></button>
+  <button class="nav-link" data-sec="finish">Unwrap, Glaze + Finish<span class="nav-time">4:50 PM</span></button>
+  <button class="nav-link" data-sec="serve">Serve + Doneness Checks<span class="nav-time">5:20 PM</span></button>
 
   <div class="nav-section-label">Sister's Station</div>
   <button class="nav-link" data-sec="sides">🥬 Sides Full Guide<span class="nav-time">Potatoes · Corn · Salad</span></button>
@@ -219,7 +255,7 @@ td.nc { color: var(--muted); font-size: 12px; font-style: italic; }
 <div class="section active" id="sec-timeline">
   <div class="section-eyebrow">Cook Guide</div>
   <div class="section-title">Full Timeline</div>
-  <div class="section-lead">Everything works backward from 5:00 PM. Ribs are the anchor — everything else fits around them. Use each section in order for the full detail on every step.</div>
+  <div class="section-lead">Everything works backward from 5:20 PM. Ribs are the anchor — everything else fits around them. Use each section in order for the full detail on every step.</div>
 
   <div class="timeline">
     <div class="tstep hl">
@@ -237,14 +273,14 @@ td.nc { color: var(--muted); font-size: 12px; font-style: italic; }
       </div>
     </div>
     <div class="tstep hl">
-      <div class="ttime">1:30 PM</div>
+      <div class="ttime">1:15 PM</div>
       <div class="ttext">
         <div class="taction">🔥 Ribs On <span class="ttag s">🌶 Spicy</span><span class="ttag k">🍯 Kids</span></div>
         <div class="tnote">225°F, bone side down. Bark builds for 2 to 2.25 hrs — don't open the lid.</div>
       </div>
     </div>
     <div class="tstep">
-      <div class="ttime">~2:45 PM</div>
+      <div class="ttime">~2:30 PM</div>
       <div class="ttext">
         <div class="taction">💦 Optional Spritz</div>
         <div class="tnote">Light apple juice once if bark looks dry</div>
@@ -254,11 +290,11 @@ td.nc { color: var(--muted); font-size: 12px; font-style: italic; }
       <div class="ttime">3:15 PM</div>
       <div class="ttext">
         <div class="taction">🥔 Prep Potatoes <span class="ttag sd">Side</span></div>
-        <div class="tnote">Halve, season, into foil pouches — ready for 3:30</div>
+        <div class="tnote">Halve, season, into foil pouches — ready for 3:55</div>
       </div>
     </div>
     <div class="tstep hl">
-      <div class="ttime">3:30 PM</div>
+      <div class="ttime">3:55 PM</div>
       <div class="ttext">
         <div class="taction">📦 Wrap Ribs + Potatoes On <span class="ttag s">🌶</span><span class="ttag k">🍯</span><span class="ttag sd">🥔</span></div>
         <div class="tnote">Raise to 275–300°F. Meat side down in foil. Potatoes on the grate.</div>
@@ -293,28 +329,28 @@ td.nc { color: var(--muted); font-size: 12px; font-style: italic; }
       </div>
     </div>
     <div class="tstep hl">
-      <div class="ttime">4:30 PM</div>
+      <div class="ttime">4:50 PM</div>
       <div class="ttext">
         <div class="taction">🔓 Unwrap Ribs + Final Glaze</div>
         <div class="tnote">Back on at 275°F. Glaze and let set tacky — 25 min.</div>
       </div>
     </div>
     <div class="tstep">
-      <div class="ttime">4:45 PM</div>
+      <div class="ttime">5:05 PM</div>
       <div class="ttext">
         <div class="taction">🥗 Toss Salad <span class="ttag sd">Side</span></div>
         <div class="tnote">Dress fresh right before serving</div>
       </div>
     </div>
     <div class="tstep hl">
-      <div class="ttime">4:55 PM</div>
+      <div class="ttime">5:15 PM</div>
       <div class="ttext">
         <div class="taction">🛑 Pull Ribs — Rest 10 Min</div>
-        <div class="tnote">Loosely tent. Slice between the bones at 5:00 PM.</div>
+        <div class="tnote">Loosely tent. Slice between the bones at 5:20 PM.</div>
       </div>
     </div>
     <div class="tstep">
-      <div class="ttime">5:00 PM</div>
+      <div class="ttime">5:20 PM</div>
       <div class="ttext">
         <div class="taction">🍽️ Eat</div>
         <div class="tnote">Ribs · Chicken · Potatoes · Corn Ribs · Salad</div>
@@ -396,7 +432,7 @@ td.nc { color: var(--muted); font-size: 12px; font-style: italic; }
 <div class="section" id="sec-prep">
   <div class="section-eyebrow">12:45 PM</div>
   <div class="section-title">Prep</div>
-  <div class="section-lead">30 minutes. Both racks prepped and resting, chicken rubbed and in the fridge. Nothing goes on the smoker until 1:30 PM.</div>
+  <div class="section-lead">30 minutes. Both racks prepped and resting, chicken rubbed and in the fridge. Nothing goes on the smoker until 1:15 PM.</div>
 
   <h2>Ribs — 2 Racks</h2>
 
@@ -437,19 +473,19 @@ td.nc { color: var(--muted); font-size: 12px; font-style: italic; }
   </div>
 
   <div class="callout gold">
-    <div class="callout-label">Remember this at wrap time (3:30 PM)</div>
+    <div class="callout-label">Remember this at wrap time (3:55 PM)</div>
     <p>Before sealing the foil, sprinkle a tiny bit more rub inside alongside the butter and honey. It melts into a flavor layer that braises directly into the meat — the difference between good ribs and "what the hell is in these."</p>
   </div>
 
   <div class="nav-footer">
     <button class="btn" onclick="goSec('rubs')">← The Rubs</button>
-    <button class="btn" onclick="goSec('smoke')">1:30 PM Smoke →</button>
+    <button class="btn" onclick="goSec('smoke')">1:15 PM Smoke →</button>
   </div>
 </div>
 
 <!-- SMOKE -->
 <div class="section" id="sec-smoke">
-  <div class="section-eyebrow">1:30 PM – 3:30 PM</div>
+  <div class="section-eyebrow">1:30 PM – 3:55 PM</div>
   <div class="section-title">Smoke Phase</div>
   <div class="section-lead">2 to 2.25 hours uninterrupted smoke. This is where bark builds. Resist the urge to open the lid and check.</div>
 
@@ -466,13 +502,13 @@ td.nc { color: var(--muted); font-size: 12px; font-style: italic; }
   </div>
 
   <div class="card">
-    <div class="card-title">~2:45 PM — Optional Spritz</div>
+    <div class="card-title">~2:30 PM — Optional Spritz</div>
     <p>One quick pass of apple juice from a spray bottle if the bark looks dry. Don't soak it — over-spritzing softens what you've built. If it looks good, skip it entirely.</p>
   </div>
 
   <div class="callout blue">
     <div class="callout-label">3:15 PM — Prep potatoes while ribs finish the smoke phase</div>
-    <p>Don't waste this window. Halve your baby potatoes, toss with butter and seasonings below, and seal into foil pouches. They go on the grate at 3:30 PM right when you wrap the ribs.</p>
+    <p>Don't waste this window. Halve your baby potatoes, toss with butter and seasonings below, and seal into foil pouches. They go on the grate at 3:55 PM right when you wrap the ribs.</p>
   </div>
 
   <h2>🥔 Foil Potato Recipe</h2>
@@ -485,11 +521,11 @@ td.nc { color: var(--muted); font-size: 12px; font-style: italic; }
     <tr><td>Garlic powder</td><td class="amt">½ tsp</td><td class="nc"></td></tr>
     <tr><td>Smoked paprika</td><td class="amt">½ tsp</td><td class="nc">Or rosemary if preferred</td></tr>
   </table>
-  <p style="font-size:14px;">Toss everything together, seal into a double-layer foil pouch with room for steam. On at 3:30 PM, done in 60–75 min at 275–300°F.</p>
+  <p style="font-size:14px;">Toss everything together, seal into a double-layer foil pouch with room for steam. On at 3:55 PM, done in 60–75 min at 275–300°F.</p>
 
   <div class="nav-footer">
     <button class="btn" onclick="goSec('prep')">← Prep</button>
-    <button class="btn" onclick="goSec('wrap')">3:30 PM Wrap →</button>
+    <button class="btn" onclick="goSec('wrap')">3:55 PM Wrap →</button>
   </div>
 </div>
 
@@ -504,20 +540,20 @@ td.nc { color: var(--muted); font-size: 12px; font-style: italic; }
   <h2>Your Timing at a Glance</h2>
   <table>
     <tr><th>Side</th><th>Prep By</th><th>On At</th><th>Done By</th><th>Where</th></tr>
-    <tr><td>🥔 Foil Potatoes</td><td class="amt">3:15 PM</td><td class="amt">3:30 PM</td><td class="amt">4:40 PM</td><td>On the smoker grate</td></tr>
+    <tr><td>🥔 Foil Potatoes</td><td class="amt">3:15 PM</td><td class="amt">3:55 PM</td><td class="amt">4:40 PM</td><td>On the smoker grate</td></tr>
     <tr><td>🌽 Corn Ribs</td><td class="amt">3:45 PM</td><td class="amt">4:00 PM</td><td class="amt">4:40 PM</td><td>On the smoker grate</td></tr>
-    <tr><td>🥗 Fresh Salad</td><td class="amt">4:45 PM</td><td>—</td><td class="amt">5:00 PM</td><td>In the kitchen — dress right before serving</td></tr>
+    <tr><td>🥗 Fresh Salad</td><td class="amt">5:05 PM</td><td>—</td><td class="amt">5:20 PM</td><td>In the kitchen — dress right before serving</td></tr>
   </table>
 
   <div class="callout blue">
     <div class="callout-label">Coordinating with the cook</div>
-    <p>At <strong>3:30 PM</strong> the ribs are getting wrapped and the smoker goes up to 275–300°F — that's when your potatoes go on alongside the ribs. You'll need to open the smoker to place them on the grate. At <strong>3:45 PM</strong> you'll go back out to add the chicken, and prep your corn ribs right then so they're ready at 4:00 PM.</p>
+    <p>At <strong>3:55 PM</strong> the ribs are getting wrapped and the smoker goes up to 275–300°F — that's when your potatoes go on alongside the ribs. You'll need to open the smoker to place them on the grate. At <strong>3:45 PM</strong> you'll go back out to add the chicken, and prep your corn ribs right then so they're ready at 4:00 PM.</p>
   </div>
 
   <div class="side-block">
     <div class="side-block-header">
       <div class="side-block-title">🥔 Smoky Foil Potatoes</div>
-      <div class="side-block-time">On: 3:30 PM · Done: ~4:40 PM</div>
+      <div class="side-block-time">On: 3:55 PM · Done: ~4:40 PM</div>
     </div>
     <div class="side-block-body">
       <p><strong>Prep at 3:15 PM</strong> — while the ribs are still smoking and before you need to go outside.</p>
@@ -535,7 +571,7 @@ td.nc { color: var(--muted); font-size: 12px; font-style: italic; }
 
       <h3>Method</h3>
       <p>Toss halved potatoes with all ingredients until evenly coated. Place on a double layer of heavy-duty foil. Fold into a sealed pouch — leave a little room inside for steam to build. Crimp the edges tightly.</p>
-      <p>Place directly on the smoker grate at 3:30 PM alongside the wrapped ribs. Cook 60–75 minutes at 275–300°F. They're done when a fork slides in easily and the cut sides have slightly crisped and browned against the foil.</p>
+      <p>Place directly on the smoker grate at 3:55 PM alongside the wrapped ribs. Cook 60–75 minutes at 275–300°F. They're done when a fork slides in easily and the cut sides have slightly crisped and browned against the foil.</p>
 
       <div class="callout gold">
         <div class="callout-label">Last-second move — do this right before serving</div>
@@ -580,10 +616,10 @@ td.nc { color: var(--muted); font-size: 12px; font-style: italic; }
   <div class="side-block">
     <div class="side-block-header">
       <div class="side-block-title">🥗 Fresh Arugula Salad</div>
-      <div class="side-block-time">Toss at 4:45 PM · Dress right before serving</div>
+      <div class="side-block-time">Toss at 5:05 PM · Dress right before serving</div>
     </div>
     <div class="side-block-body">
-      <p><strong>Don't dress this early</strong> — arugula wilts fast. Build the bowl at 4:45 PM but don't add the dressing until right before the food hits the table.</p>
+      <p><strong>Don't dress this early</strong> — arugula wilts fast. Build the bowl at 5:05 PM but don't add the dressing until right before the food hits the table.</p>
 
       <h3>Ingredients</h3>
       <table>
@@ -609,13 +645,13 @@ td.nc { color: var(--muted); font-size: 12px; font-style: italic; }
 
   <div class="nav-footer">
     <button class="btn" onclick="goSec('smoke')">← Smoke Phase</button>
-    <button class="btn" onclick="goSec('wrap')">3:30 PM Wrap →</button>
+    <button class="btn" onclick="goSec('wrap')">3:55 PM Wrap →</button>
   </div>
 </div>
 
 <!-- WRAP -->
 <div class="section" id="sec-wrap">
-  <div class="section-eyebrow">3:30 PM</div>
+  <div class="section-eyebrow">3:55 PM</div>
   <div class="section-title">Wrap Ribs + Sides On</div>
   <div class="section-lead">Raise the temp, wrap both racks with their different ingredients, and get the potatoes on the grate at the same time. This is the most impactful step of the whole cook.</div>
 
@@ -659,7 +695,7 @@ td.nc { color: var(--muted); font-size: 12px; font-style: italic; }
 
   <div class="card">
     <div class="card-title">Also Right Now — Potatoes On</div>
-    <p>Your prepped foil pouches from the smoke phase go directly on the grates alongside the wrapped ribs. 60–75 min at 275–300°F puts them done right at 4:30–4:45 PM.</p>
+    <p>Your prepped foil pouches from the smoke phase go directly on the grates alongside the wrapped ribs. 60–75 min at 275–300°F puts them done right at 5:05–5:10 PM.</p>
   </div>
 
   <div class="nav-footer">
@@ -670,7 +706,7 @@ td.nc { color: var(--muted); font-size: 12px; font-style: italic; }
 
 <!-- CHICKEN -->
 <div class="section" id="sec-chicken">
-  <div class="section-eyebrow">3:45 PM – 4:30 PM</div>
+  <div class="section-eyebrow">3:45 PM – 4:50 PM</div>
   <div class="section-title">Chicken + Corn On</div>
   <div class="section-lead">Chicken at 3:45 PM, corn ribs at 4:00 PM. Both done before the ribs come off the wrap. Prepare the corn while you're already out at the smoker.</div>
 
@@ -725,15 +761,15 @@ td.nc { color: var(--muted); font-size: 12px; font-style: italic; }
 
   <div class="nav-footer">
     <button class="btn" onclick="goSec('wrap')">← Wrap Ribs</button>
-    <button class="btn" onclick="goSec('finish')">4:30 PM Finish →</button>
+    <button class="btn" onclick="goSec('finish')">4:50 PM Finish →</button>
   </div>
 </div>
 
 <!-- FINISH -->
 <div class="section" id="sec-finish">
-  <div class="section-eyebrow">4:30 PM</div>
+  <div class="section-eyebrow">4:50 PM</div>
   <div class="section-title">Unwrap, Glaze + Finish</div>
-  <div class="section-lead">Unwrap, apply the final glaze, and let it set for 25 minutes. Toss the salad at 4:45 PM. Pull at 4:55 PM and rest before slicing.</div>
+  <div class="section-lead">Unwrap, apply the final glaze, and let it set for 25 minutes. Toss the salad at 5:05 PM. Pull at 5:15 PM and rest before slicing.</div>
 
   <div class="temp-badge">🌡️ Smoker at 275°F</div>
 
@@ -761,11 +797,11 @@ td.nc { color: var(--muted); font-size: 12px; font-style: italic; }
   </div>
 
   <div class="callout red">
-    <div class="callout-label">4:55 PM — Pull and Rest</div>
-    <p>Pull both racks. Rest on a cutting board loosely tented with foil for 10 full minutes. Don't rush it — the juices redistribute during rest. Slice between the bones and serve at 5:00 PM.</p>
+    <div class="callout-label">5:15 PM — Pull and Rest</div>
+    <p>Pull both racks. Rest on a cutting board loosely tented with foil for 10 full minutes. Don't rush it — the juices redistribute during rest. Slice between the bones and serve at 5:20 PM.</p>
   </div>
 
-  <h2>🥗 Fresh Salad — 4:45 PM</h2>
+  <h2>🥗 Fresh Salad — 5:05 PM</h2>
   <div class="card">
     <div class="card-title">Dress Fresh Right Before Serving</div>
     <table>
@@ -783,13 +819,13 @@ td.nc { color: var(--muted); font-size: 12px; font-style: italic; }
 
   <div class="nav-footer">
     <button class="btn" onclick="goSec('chicken')">← Chicken</button>
-    <button class="btn" onclick="goSec('serve')">5:00 PM Serve →</button>
+    <button class="btn" onclick="goSec('serve')">5:20 PM Serve →</button>
   </div>
 </div>
 
 <!-- SERVE -->
 <div class="section" id="sec-serve">
-  <div class="section-eyebrow">5:00 PM</div>
+  <div class="section-eyebrow">5:20 PM</div>
   <div class="section-title">Serve + Doneness Checks</div>
   <div class="section-lead">Last-second touches, how to read when everything is actually done, and how to slice.</div>
 
@@ -881,12 +917,12 @@ td.nc { color: var(--muted); font-size: 12px; font-style: italic; }
     <button class="mobile-nav-btn active" data-sec="timeline">Timeline</button>
     <button class="mobile-nav-btn" data-sec="rubs">Rubs</button>
     <button class="mobile-nav-btn" data-sec="prep">12:45 Prep</button>
-    <button class="mobile-nav-btn" data-sec="smoke">1:30 Smoke</button>
+    <button class="mobile-nav-btn" data-sec="smoke">1:15 Smoke</button>
     <button class="mobile-nav-btn" data-sec="sides">🥬 Sides</button>
-    <button class="mobile-nav-btn" data-sec="wrap">3:30 Wrap</button>
+    <button class="mobile-nav-btn" data-sec="wrap">3:55 Wrap</button>
     <button class="mobile-nav-btn" data-sec="chicken">3:45 Chicken</button>
-    <button class="mobile-nav-btn" data-sec="finish">4:30 Finish</button>
-    <button class="mobile-nav-btn" data-sec="serve">5:00 Serve</button>
+    <button class="mobile-nav-btn" data-sec="finish">4:50 Finish</button>
+    <button class="mobile-nav-btn" data-sec="serve">5:20 Serve</button>
   </div>
 </div>
 
